@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5E8DC;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🎥 Canvas tamaño Instagram */
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+/* 💖 Texto romántico */
+.text {
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
+  text-align: center;
+  color: #C44569;
+  font-size: 42px;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.text span {
+  font-size: 36px;
+  color: #ff4d6d;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.85; }
